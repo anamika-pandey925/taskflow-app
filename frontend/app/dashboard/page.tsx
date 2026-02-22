@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import Link from 'next/link';
 import { useAuth } from '../../context/AuthContext';
 import AuthGuard from '../../components/AuthGuard';
 import ProfileCard from '../../components/ProfileCard';
