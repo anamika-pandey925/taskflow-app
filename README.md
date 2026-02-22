@@ -90,8 +90,9 @@ Base URL: `http://localhost:5000/api`
 | Method | Endpoint         | Auth | Description                              |
 |--------|------------------|------|------------------------------------------|
 | GET    | `/tasks`         | JWT  | Get all user tasks (search/filter/sort)  |
-| POST   | `/tasks`         | JWT  | Create a new task                        |
-| PUT    | `/tasks/:id`     | JWT  | Update a task                            |
+| GET    | `/tasks/:id`     | JWT  | Get a single task by ID                  |
+| POST   | `/tasks`         | JWT  | Create a new task (supports `dueDate`)   |
+| PUT    | `/tasks/:id`     | JWT  | Update a task (supports `dueDate`)       |
 | DELETE | `/tasks/:id`     | JWT  | Delete a task                            |
 
 #### GET `/tasks` Query Params
