@@ -1,12 +1,12 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { useAuth } from '../context/AuthContext';
-import AuthGuard from '../components/AuthGuard';
-import ProfileCard from '../components/ProfileCard';
-import TaskCard from '../components/TaskCard';
-import TaskModal from '../components/TaskModal';
-import api from '../lib/api';
+import { useAuth } from '../../context/AuthContext';
+import AuthGuard from '../../components/AuthGuard';
+import ProfileCard from '../../components/ProfileCard';
+import TaskCard from '../../components/TaskCard';
+import TaskModal from '../../components/TaskModal';
+import api from '../../lib/api';
 
 interface Task {
     _id: string;
