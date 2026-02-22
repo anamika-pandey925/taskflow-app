@@ -1,0 +1,12 @@
+{
+    "name": "taskflow-root",
+    "private": true,
+    "workspaces": [
+        "frontend",
+        "backend"
+    ],
+    "scripts": {
+        "build": "cd frontend && npm install && npm run build",
+        "install": "cd frontend && npm install"
+    }
+}
