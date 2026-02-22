@@ -103,10 +103,10 @@ export default function DashboardPage() {
                 {/* Sidebar */}
                 <aside className="w-full md:w-64 md:min-h-screen bg-gray-900/60 border-b md:border-b-0 md:border-r border-white/[0.07] flex md:flex-col">
                     <div className="px-5 py-5 md:py-6 flex-shrink-0">
-                        <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center text-sm font-bold">T</div>
-                            <span className="font-bold text-base tracking-tight">TaskFlow</span>
-                        </div>
+                        <Link href="/" className="flex items-center gap-3 mb-10 px-2 group">
+                            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center font-bold text-lg shadow-lg shadow-violet-500/20 group-hover:scale-110 transition-transform">T</div>
+                            <span className="text-xl font-bold text-white tracking-tight">TaskFlow</span>
+                        </Link>
                     </div>
 
                     <nav className="flex flex-row md:flex-col gap-1 px-3 py-2 md:py-4 flex-1 overflow-x-auto md:overflow-x-visible">

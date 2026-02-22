@@ -48,6 +48,12 @@ export default function RegisterPage() {
 
     return (
         <div className="min-h-screen bg-gray-950 flex items-center justify-center px-4 py-12">
+            <div className="fixed top-6 left-6 z-50">
+                <Link href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-gray-400 hover:text-white transition-colors text-sm font-medium">
+                    <span>←</span> Back to Home
+                </Link>
+            </div>
+
             <div className="fixed inset-0 pointer-events-none">
                 <div className="absolute top-0 right-1/4 w-96 h-96 bg-violet-600/15 rounded-full blur-3xl" />
                 <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-indigo-600/15 rounded-full blur-3xl" />
