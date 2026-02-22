@@ -6,7 +6,9 @@ const User = require('../models/User');
 
 // Helper to generate JWT
 const generateToken = (id) => {
-    return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRE || '7d' });
+    // Fallback secret for demo/assignment stability if not set in cloud env
+    const secret = process.env.JWT_SECRET || 'intern_assignment_default_secret_2024';
+    return jwt.sign({ id }, secret, { expiresIn: process.env.JWT_EXPIRE || '7d' });
 };
 
 // Helper to send token response
